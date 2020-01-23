@@ -1,13 +1,6 @@
 {
   "logs": [
     {
-      "message": "Changed hard drive on workstation 005",
-      "attention": false,
-      "tech": "Mehedi Hasan",
-      "date": "2020-01-23T09:54:54.166Z",
-      "id": 1
-    },
-    {
       "message": "System Failure on workstation 007",
       "attention": true,
       "tech": "Sabuj Sarker",
@@ -20,6 +13,13 @@
       "tech": "Mehedi Hasan",
       "date": "2020-01-23T09:55:59.135Z",
       "id": 3
+    },
+    {
+      "message": "Changed hard drive on workstation 005",
+      "attention": false,
+      "tech": "John Doe",
+      "date": "2020-01-23T10:11:34.415Z",
+      "id": 4
     }
   ],
   "techs": [
