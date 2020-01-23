@@ -1,25 +1,25 @@
 {
   "logs": [
     {
-      "id": 1,
       "message": "Changed hard drive on workstation 005",
       "attention": false,
-      "date": "03-02-2019",
-      "tech": "Sam Smith"
+      "tech": "Mehedi Hasan",
+      "date": "2020-01-23T09:54:54.166Z",
+      "id": 1
     },
     {
-      "id": 2,
-      "message": "Workstation 007 not working",
+      "message": "System Failure on workstation 007",
       "attention": true,
-      "date": "03-02-2019",
-      "tech": "John Doe"
+      "tech": "Sabuj Sarker",
+      "date": "2020-01-23T09:55:28.678Z",
+      "id": 2
     },
     {
-      "id": 3,
-      "message": "Changed memory on workstation 050",
+      "message": "System Recovered on 007",
       "attention": false,
-      "date": "03-02-2019",
-      "tech": "Sara Wilson"
+      "tech": "Mehedi Hasan",
+      "date": "2020-01-23T09:55:59.135Z",
+      "id": 3
     }
   ],
   "techs": [

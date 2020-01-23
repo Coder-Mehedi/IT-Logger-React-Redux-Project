@@ -1,27 +1,52 @@
-import { GET_LOGS, SET_LOADING, LOGS_ERROR } from './types'
+import { GET_LOGS, SET_LOADING, LOGS_ERROR, ADD_LOG } from "./types";
 
 // Get logs from server
 export const getLogs = () => async dispatch => {
-    try {
-        setLoading()
-        const res = await fetch('/logs')
-        const data = await res.json()
+  try {
+    setLoading();
+    const res = await fetch("/logs");
+    const data = await res.json();
 
-        dispatch({
-            type: GET_LOGS,
-            payload: data
-        })
-    } catch (err) {
-        dispatch({
-            type: LOGS_ERROR,
-            payload: err.response.data
-        })
-    }
-       
-}
+    dispatch({
+      type: GET_LOGS,
+      payload: data
+    });
+  } catch (err) {
+    dispatch({
+      type: LOGS_ERROR,
+      payload: err.response.data
+    });
+  }
+};
+
+// Add New Log
+export const addLog = log => async dispatch => {
+  try {
+    setLoading();
+    const res = await fetch("/logs", {
+      method: "POST",
+      body: JSON.stringify(log),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    });
+    const data = await res.json();
+    console.log("addLog function called and ", data);
+
+    dispatch({
+      type: ADD_LOG,
+      payload: data
+    });
+  } catch (err) {
+    dispatch({
+      type: LOGS_ERROR,
+      payload: err.response.data
+    });
+  }
+};
 
 export const setLoading = () => {
-    return {
-        type: SET_LOADING
-    }
-}
+  return {
+    type: SET_LOADING
+  };
+};
