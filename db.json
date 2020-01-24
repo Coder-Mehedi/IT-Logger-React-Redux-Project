@@ -20,13 +20,6 @@
       "tech": "John Doe",
       "date": "2020-01-23T10:11:34.415Z",
       "id": 4
-    },
-    {
-      "id": 5,
-      "message": "2222222",
-      "attention": true,
-      "tech": "Mehedi Hasan",
-      "date": "2020-01-23T11:24:06.546Z"
     }
   ],
   "techs": [
@@ -36,18 +29,13 @@
       "id": 1
     },
     {
-      "firstName": "Sabuj",
-      "lastName": "Sarker",
-      "id": 2
-    },
-    {
       "firstName": "Rakib",
       "lastName": "Aakon",
       "id": 3
     },
     {
-      "firstName": "Lancer",
-      "lastName": "Abir",
+      "firstName": "qwerq",
+      "lastName": "erqweqwr",
       "id": 4
     }
   ]
